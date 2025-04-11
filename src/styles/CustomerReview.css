@@ -1,0 +1,49 @@
+/* Customer Review Section */
+.review-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .review-swiper {
+    padding-bottom: 40px; /* Space for navigation buttons */
+  }
+  
+  /* Review Card */
+  .review-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .review-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Review Image */
+  .review-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  /* Review Name */
+  .review-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Review Content */
+  .review-content {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+  }
+  

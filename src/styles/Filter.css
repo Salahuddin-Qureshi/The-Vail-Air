@@ -1,0 +1,118 @@
+.filter-container {
+
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  /* gap: 150px; */
+
+  /* display: flex; */
+  /* flex-wrap: wrap;   */
+  /* align-items: center; */
+  /* justify-content: space-between;
+  gap: 15px;
+  background-color: #fff;
+  
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+  border: 1px solid rgba(255, 255, 255, 0.2); */
+}
+
+/* Ensure equal width for each input */
+.input-wrapper {
+}
+
+
+.filter-input,
+.filter-select {
+    /* width: 100%; */
+    min-width: 180px; /* Prevents too much shrinking */
+    padding: 12px 20px 12px 45px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+}  
+
+  .filter-input:focus,
+  .filter-select:focus {
+    outline: none;
+    border-color: #ff6200;
+    box-shadow: 0 0 8px rgba(255, 98, 0, 0.2); /* Glow effect on focus */
+    background: #fff; /* Remove gradient on focus for clarity */
+  }
+  
+  .where-input::placeholder,
+  .when-input::placeholder {
+    color: #bbb;
+    font-style: italic;
+  }
+  
+  /* Icons inside inputs */
+  .input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #ff6200; /* Orange icon color */
+  }
+  
+  /* Style for the select dropdown */
+  .filter-select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="none" stroke="%23ff6200" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>');
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px;
+  }
+  
+  /* Search button */
+  .filter-search-btn {
+    background: linear-gradient(45deg, #ff6200, #ff8c00); /* Gradient background */
+    color: #fff;
+    padding: 14px 40px; /* Larger padding for a bigger button */
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(255, 98, 0, 0.3); /* Shadow for depth */
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Hover effect for the button */
+  .filter-search-btn:hover {
+    background: linear-gradient(45deg, #e55a00, #ff6200); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slight scale-up effect */
+    box-shadow: 0 6px 20px rgba(255, 98, 0, 0.4); /* Deeper shadow on hover */
+  }
+  
+  /* Add a shine effect on hover */
+  .filter-search-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.3),
+      transparent
+    );
+    transition: 0.5s;
+  }
+  
+  .filter-search-btn:hover::before {
+    left: 100%;
+  }

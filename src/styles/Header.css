@@ -1,0 +1,127 @@
+/* General Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -150px;
+  margin-right: -150px;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #0d3b66;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo Styling */
+.header-logo {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+
+.logo-icon {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.logo-text {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navigation Links Styling */
+.header-nav {
+  display: flex;
+  gap: 30px;
+  flex: 1;
+  justify-content: center;
+}
+
+/* Navigation Item */
+.nav-item {
+  position: relative;
+  padding: 10px;
+}
+
+/* Navigation Links Styling */
+.nav-link {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #ff6200;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 200px;
+  z-index: 1;
+  /* margin-top: 10px; */
+}
+
+.dropdown a {
+  color: #333;
+  padding: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 5s ease;
+}
+
+.dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show Dropdown on Hover for Parent and Dropdown itself */
+.nav-item:hover .dropdown,
+.dropdown:hover {
+  display: block;
+}
+
+/* Right-aligned Sign-up and Log-in */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Signup and Login Links Styling */
+.signup-link {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.signup-link:hover {
+  color: #ff6200;
+}
+
+.login-btn {
+  background-color: #ff6200;
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.login-btn:hover {
+  background-color: #e55a00;
+}

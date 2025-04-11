@@ -1,0 +1,53 @@
+.why-choose-us {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: white;
+  }
+  
+  .why-choose-us h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .feature-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #222;
+  }
+  
+  .feature-desc {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+  
