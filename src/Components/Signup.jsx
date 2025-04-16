@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import the Link component
 
 const Signup = () => {
   return (
@@ -9,7 +10,7 @@ const Signup = () => {
         <input type="email" placeholder="Email" required />
         <input type="password" placeholder="Password" required />
         <button type="submit">Sign Up</button>
-        <p>Already have an account? <a href="/login">Login</a></p>
+        <p>Already have an account? <Link to="/login">Login</Link></p> {/* Use Link instead of <a> */}
       </form>
     </div>
   );

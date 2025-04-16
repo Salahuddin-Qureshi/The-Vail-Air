@@ -1,0 +1,111 @@
+.hotel-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+  }
+  
+  .hotel-container h1 {
+    font-size: 2.5rem;
+    color: #0b3d91;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #666;
+  }
+  
+  .top-destinations h2,
+  .hotel-partners h2,
+  .offers h2,
+  .cta-book h2 {
+    color: #004aad;
+    margin-bottom: 1rem;
+  }
+  
+  .destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .country-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    transition: transform 0.3s;
+  }
+  
+  .country-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .country-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .country-card h3 {
+    margin: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .partner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .partner-card {
+    background-color: #f0f4ff;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 1px solid #d0e0ff;
+  }
+  
+  .offer-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  .offer-list li {
+    background: #f9f9f9;
+    border-left: 5px solid #004aad;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    text-align: left;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .cta-book {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #eaf0ff;
+    border-radius: 10px;
+  }
+  
+  .book-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background-color: #004aad;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s;
+  }
+  
+  .book-btn:hover {
+    background-color: #002c70;
+  }
+  

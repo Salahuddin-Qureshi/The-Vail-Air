@@ -8,6 +8,12 @@ import Login from './Components/Login'; // import Login page
 import Signup from './Components/Signup'; // import Signup page
 import ResetPassword from './Components/ResetPassword'; // import ResetPassword page
 import ForgotPassword from './Components/ForgotPassword'; // import ForgotPassword page
+import HotelAccommodation from './Components/HotelAccommodation';
+import CustomizedPackages from './Components/CustomizedPackages';
+import UmrahPackages from './Components/UmrahPackages';
+import Transportation from './Components/Transportation ';
+import Tours from './Components/Tours';
+import Adventure from './Components/Adventure';
 
 function App() {
   return (
@@ -16,6 +22,15 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/visa-processing" element={<VisaProcessing />} />
         <Route path="/flights" element={<Flights />} />
+        <Route path="/hotel-accommodation" element={<HotelAccommodation />} />
+        <Route path="/customize-packages" element={<CustomizedPackages />} />
+        <Route path="/umrah-packages" element={<UmrahPackages />} />
+        <Route path="/transportations" element={<Transportation />} />
+        <Route path="/tours" element={<Tours />} />
+        <Route path="/adventure" element={<Adventure />} />
+        
+
+
         
         {/* Authentication Routes */}
         <Route path="/login" element={<Login />} />

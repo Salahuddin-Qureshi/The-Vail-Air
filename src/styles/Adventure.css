@@ -1,0 +1,156 @@
+/* Adventure Container */
+.adventure-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 3rem 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Adventure Title */
+  .adventure-title {
+    font-size: 2.5rem; /* Reduced size for better fit */
+    color: #004aad; /* Correct theme color */
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  /* Adventure Subtitle */
+  .adventure-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+  }
+  
+  /* Adventure Tours Grid */
+  .adventure-tours {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Smaller card size */
+    gap: 2rem;
+    padding: 0 2rem;
+    justify-items: center;
+  }
+  
+  /* Adventure Card */
+  .adventure-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 300px; /* Reduced height */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Hover Effects */
+  .adventure-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Adventure Image */
+  .adventure-card img {
+    width: 100%;
+    height: 200px; /* Reduced height for images */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Card Content */
+  .adventure-card-content {
+    padding: 1.2rem; /* Reduced padding for compact look */
+    background: #fff;
+    position: relative;
+    width: 100%;
+    text-align: left;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  
+  /* Adventure Card Title */
+  .adventure-card-content h3 {
+    color: #004aad; /* Correct theme color */
+    margin-bottom: 1rem;
+    font-size: 1.2rem; /* Adjusted size */
+    font-weight: bold;
+  }
+  
+  /* Adventure Card Description */
+  .adventure-card-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    color: #666;
+  }
+  
+  /* Price Styling */
+  .adventure-card-content .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #004aad; /* Correct theme color */
+    margin-bottom: 1rem;
+  }
+  
+  /* Adventure Button */
+  .adventure-btn {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background-color: #004aad; /* Correct theme color */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+    margin-top: auto;
+  }
+  
+  .adventure-btn:hover {
+    background-color: #00358d; /* Slightly darker theme color */
+  }
+  
+  /* Call to Action (CTA) Section */
+  .cta-adventure {
+    margin-top: 4rem;
+    background-color: #e4f1fe; /* Light background to match theme */
+    padding: 2rem;
+    border-radius: 12px;
+  }
+  
+  .cta-adventure h2 {
+    color: #004aad; /* Correct theme color */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .custom-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background-color: #004aad; /* Correct theme color */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-btn:hover {
+    background-color: #00358d; /* Slightly darker theme color */
+  }
+  
+  /* Adjustments for the image hover effect */
+  .adventure-card img:hover {
+    transform: scale(1.05);
+  }
+  
