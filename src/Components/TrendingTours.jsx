@@ -1,12 +1,6 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper/modules";
-
+import React, { useState } from "react";
 import TravelCard from "./TravelCard";
-
+import "../styles/TrendingTours.css"
 // Images
 import maldivesImage from "../assets/maldives.jpg";
 import parisImage from "../assets/paris.jpg";
@@ -34,23 +28,43 @@ const travelPackages = [
 ];
 
 function TrendingTours() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Function to go to the next slide
+  const nextSlide = () => {
+    if (currentIndex < travelPackages.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    }
+  };
+
+  // Function to go to the previous slide
+  const prevSlide = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+  };
+
   return (
     <div className="travel-card-section">
-        <h1>Trending Now</h1>
-      <Swiper
-        slidesPerView={4}
-        spaceBetween={10}
-        // pagination={{ clickable: true }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="travel-swiper"
-      >
+      <h1>Trending Now</h1>
+      <div className="carousel-container">
+        <button className="carousel-btn prev" onClick={prevSlide}>❮</button>
+        <div className="carousel-content">
+          {travelPackages.slice(currentIndex, currentIndex + 4).map((pkg, index) => (
+            <TravelCard key={index} {...pkg} />
+          ))}
+        </div>
+        <button className="carousel-btn next" onClick={nextSlide}>❯</button>
+      </div>
+      <div className="carousel-pagination">
         {travelPackages.map((pkg, index) => (
-          <SwiperSlide key={index}>
-            <TravelCard {...pkg} />
-          </SwiperSlide>
+          <span
+            key={index}
+            className={`pagination-dot ${index === currentIndex ? "active" : ""}`}
+            onClick={() => setCurrentIndex(index)}
+          ></span>
         ))}
-      </Swiper>
+      </div>
     </div>
   );
 }

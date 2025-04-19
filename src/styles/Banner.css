@@ -45,3 +45,34 @@
     display: flex;
     justify-content: center;
   }
+
+  /* ------------ RESPONSIVENESS ----------- */
+@media (max-width: 768px) {
+  .banner {
+    margin: 0; /* Remove negative margins */
+    height: 400px;
+  }
+
+  .banner-title {
+    font-size: 32px;
+  }
+
+  .banner-tagline {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    height: 350px;
+  }
+
+  .banner-title {
+    font-size: 24px;
+  }
+
+  .banner-tagline {
+    font-size: 14px;
+  }
+}

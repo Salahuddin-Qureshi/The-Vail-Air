@@ -1,49 +1,100 @@
 /* Customer Review Section */
 .review-section {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .review-swiper {
-    padding-bottom: 40px; /* Space for navigation buttons */
-  }
-  
-  /* Review Card */
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Carousel Container */
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Review Card */
+.review-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.review-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Review Image */
+.review-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Review Name */
+.review-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Review Content */
+.review-content {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Carousel Buttons */
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-button {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
   .review-card {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    padding: 10px;
   }
-  
-  .review-card:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Review Image */
-  .review-image {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
-  
-  /* Review Name */
   .review-name {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 16px;
   }
-  
-  /* Review Content */
   .review-content {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.5;
+    font-size: 12px;
   }
-  
+}

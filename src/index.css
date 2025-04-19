@@ -2,3 +2,16 @@ body {
   margin: 0 150px;
   font-family: Arial, sans-serif;
 }
+
+/* Mobile Responsive Body Margin */
+@media (max-width: 768px) {
+  body {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin: 0 10px;
+  }
+}

@@ -47,19 +47,43 @@
     background-color: #e64a19;
   }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .discount-container {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-  
-    .discount-heading {
-      font-size: 1.5rem;
-    }
-  
-    .discount-text {
-      font-size: 1rem;
-    }
+/* Responsive Design */
+@media (max-width: 768px) {
+  .discount-container {
+    padding: 0 15px; /* Less padding on smaller screens */
   }
-  
+
+  .discount-box {
+    padding: 25px;
+  }
+
+  .discount-heading {
+    font-size: 1.5rem;
+    margin-bottom: 10px; /* Adjust heading margin */
+  }
+
+  .discount-text {
+    font-size: 1rem;
+    margin-bottom: 20px; /* Adjust paragraph margin */
+  }
+
+  .discount-btn {
+    padding: 10px 24px;
+    font-size: 0.9rem; /* Slightly smaller button text */
+  }
+}
+
+@media (max-width: 480px) {
+  .discount-heading {
+    font-size: 1.3rem; /* Even smaller heading on very small screens */
+  }
+
+  .discount-text {
+    font-size: 0.9rem; /* Smaller text on very small screens */
+  }
+
+  .discount-btn {
+    width: 100%; /* Full-width button on mobile */
+    padding: 14px 0; /* Make the button taller for better tap area */
+  }
+}

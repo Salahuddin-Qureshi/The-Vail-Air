@@ -116,3 +116,20 @@
   .filter-search-btn:hover::before {
     left: 100%;
   }
+
+  /* ------------ RESPONSIVENESS ----------- */
+@media (max-width: 768px) {
+  .filter-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input-wrapper {
+    width: 100%;
+  }
+
+  .filter-search-btn {
+    width: 100%;
+    padding: 14px;
+  }
+}
